@@ -203,22 +203,22 @@ layers:
   - KP 7
   - KP 8
   - KP 9
-  - '&msc MOVE_Y(20)'
+  - '&msc MOVE_Y(-10)'
   - '7'
   - '8'
   - '9'
   - {t: '-', s: _}
   - {t: '=', s: +}
-  - {t: Sft+\, s: Sft+|}
+  - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - KP 4
   - KP 5
   - {t: KP 6, type: held}
-  - '&msc MOVE_X(-20)'
+  - '&msc MOVE_X(-10)'
   - $$mdi:mouse-left-click-outline$$
-  - '&msc MOVE_X(20)'
+  - '&msc MOVE_X(10)'
   - {t: '4', type: held alternate}
   - {t: '5', s: '%'}
   - '6'
@@ -232,7 +232,7 @@ layers:
   - KP 2
   - KP 3
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&msc MOVE_Y(-20)'
+  - '&msc MOVE_Y(10)'
   - '1'
   - '2'
   - '3'
