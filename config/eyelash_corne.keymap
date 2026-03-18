@@ -130,7 +130,7 @@
                                     &trans     &trans     &kp SPACE                                                                      &kp RET    &trans     &trans
             >;
 
-            sensor-bindings = <&none>;
+            sensor-bindings = <&scroll_encoder_speed>;
         };
 
         KBFunc {
@@ -142,7 +142,7 @@
                                        &trans       &trans     &trans                                                                        &trans       &trans     &trans
             >;
 
-            sensor-bindings = <&none>;
+            sensor-bindings = <&scroll_encoder_speed>;
             label = "KBFunc";
         };
 
