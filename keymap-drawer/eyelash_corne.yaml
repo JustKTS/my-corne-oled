@@ -200,10 +200,10 @@ layers:
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP 7
+  - Gui+KP 7
   - KP 8
-  - KP 9
-  - '&msc MOVE_Y(-10)'
+  - Gui+KP 9
+  - {t: '$$mdi:transfer$$', type: trans}
   - '7'
   - '8'
   - '9'
@@ -216,9 +216,9 @@ layers:
   - KP 4
   - KP 5
   - {t: KP 6, type: held}
-  - '&msc MOVE_X(-10)'
-  - $$mdi:mouse-left-click-outline$$
-  - '&msc MOVE_X(10)'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '4', type: held alternate}
   - {t: '5', s: '%'}
   - '6'
@@ -230,9 +230,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - KP 1
   - KP 2
-  - KP 3
+  - Gui+KP 3
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&msc MOVE_Y(10)'
+  - {t: '$$mdi:transfer$$', type: trans}
   - '1'
   - '2'
   - '3'
@@ -241,7 +241,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - KP NUMLOCK
-  - KP 0
+  - Gui+KP 0
   - '0'
   - KP NUMLOCK
   - {t: '$$mdi:transfer$$', type: trans}
@@ -380,10 +380,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
