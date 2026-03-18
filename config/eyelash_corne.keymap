@@ -147,7 +147,7 @@
 
         NumPad {
             bindings = <
-&kp TILDE  &trans  &trans  &kp LG(KP_NUMBER_7)  &kp KP_NUMBER_8  &kp LG(KP_NUMBER_9)                    &trans          &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9  &kp MINUS       &kp EQUAL  &kp LS(BACKSLASH)
+&kp TILDE  &trans  &trans  &kp LG(KP_NUMBER_7)  &kp KP_NUMBER_8  &kp LG(KP_NUMBER_9)                    &trans          &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9  &kp MINUS       &kp EQUAL  &kp BACKSLASH
 &trans     &trans  &trans  &kp KP_NUMBER_4      &kp KP_NUMBER_5  &kp KP_NUMBER_6                &trans  &trans  &trans  &kp NUMBER_4  &kp N5          &kp NUMBER_6  &kp UNDERSCORE  &kp PLUS   &trans
 &trans     &trans  &trans  &kp KP_NUMBER_1      &kp KP_NUMBER_2  &kp LG(KP_NUMBER_3)  &trans            &trans          &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &kp PERIOD      &kp SLASH  &kp ENTER
                            &trans               &kp KP_NUMLOCK   &kp LG(KP_NUMBER_0)                                    &kp NUMBER_0  &kp KP_NUMLOCK  &trans
