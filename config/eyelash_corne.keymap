@@ -61,22 +61,14 @@
             bindings = <&to 0>, <&to 1>, <&to 2>, <&to 3>;
         };
 
-        rgb_speed_encoder: rgb_speed_encoder {
+        rgb_hue_encoder: rgb_hue_encoder {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "RGB_SPEED_ENCODER";
+            label = "RGB_HUE_ENCODER";
             #sensor-binding-cells = <0>;
-            bindings = <&rgb_ug RGB_SPI>, <&rgb_ug RGB_SPD>;
+            bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
 
             tap-ms = <50>;
         };
-    };
-
-    scroll_encoder_10: scroll_encoder_10 {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc MOVE_Y(10)>, <&msc MOVE_Y(-10)>;
-
-        tap-ms = <100>;
     };
 
     scroll_encoder: scroll_encoder {
@@ -120,12 +112,12 @@
             display-name = "NUMBER";
             bindings = <
 &trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                               &rgb_ug RGB_BRI                   &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                        &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
+&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                        &rgb_ug RGB_SPD  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
 &trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &rgb_ug RGB_TOG                     &rgb_ug RGB_BRD                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &kp END   &kp PG_DN
                                          &trans        &trans        &trans                                                                                 &kp INS          &kp DEL          &trans
             >;
 
-            sensor-bindings = <&rgb_speed_encoder>;
+            sensor-bindings = <&rgb_hue_encoder>;
         };
 
         raise_layer {
@@ -137,7 +129,7 @@
                                     &trans     &trans     &kp SPACE                                                                      &kp RET    &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder_10>;
+            sensor-bindings = <&none>;
         };
 
         KBFunc {
@@ -149,19 +141,19 @@
                                        &trans       &trans     &trans                                                                        &trans       &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder_10>;
+            sensor-bindings = <&none>;
             label = "KBFunc";
         };
 
         NumPad {
             bindings = <
-&kp TILDE  &trans  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                              &msc MOVE_Y(-10)                   &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9  &kp MINUS       &kp EQUAL  &kp BACKSLASH
-&trans     &trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6            &msc MOVE_X(-10)  &mkp LCLK         &msc MOVE_X(10)  &kp NUMBER_4  &kp N5          &kp NUMBER_6  &kp UNDERSCORE  &kp PLUS   &trans
-&trans     &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans                      &msc MOVE_Y(10)                    &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &kp PERIOD      &kp SLASH  &kp ENTER
+&kp TILDE  &trans  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                              &msc MOVE_Y(20)                    &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9  &kp MINUS       &kp EQUAL  &kp BACKSLASH
+&trans     &trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6            &msc MOVE_X(-20)  &mkp LCLK         &msc MOVE_X(20)  &kp NUMBER_4  &kp N5          &kp NUMBER_6  &kp UNDERSCORE  &kp PLUS   &trans
+&trans     &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans                      &msc MOVE_Y(-20)                   &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &kp PERIOD      &kp SLASH  &kp ENTER
                            &trans           &kp KP_NUMLOCK   &kp KP_NUMBER_0                                                                 &kp NUMBER_0  &kp KP_NUMLOCK  &trans
             >;
 
-            sensor-bindings = <&scroll_encoder_10>;
+            sensor-bindings = <&scroll_encoder>;
             label = "NumPad";
         };
 
@@ -178,14 +170,14 @@
 
         Direct {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                              &msc MOVE_Y(-10)                   &trans          &kp PG_DN  &kp PG_UP  &kp LBKT   &kp RBKT  &kp DEL
-&trans  &trans  &trans  &trans  &trans  &trans            &msc MOVE_X(-10)  &mkp LCLK         &msc MOVE_X(10)  &kp LEFT_ARROW  &kp DOWN   &kp UP     &kp RIGHT  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                      &msc MOVE_Y(10)                    &kp INSERT      &kp HOME   &kp END    &kp LGUI   &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &msc MOVE_Y(20)                    &trans          &kp PG_DN  &kp PG_UP  &kp LBKT   &kp RBKT  &kp DEL
+&trans  &trans  &trans  &trans  &trans  &trans            &msc MOVE_X(-20)  &mkp LCLK         &msc MOVE_X(20)  &kp LEFT_ARROW  &kp DOWN   &kp UP     &kp RIGHT  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                      &msc MOVE_Y(-20)                   &kp INSERT      &kp HOME   &kp END    &kp LGUI   &trans    &trans
                         &trans  &trans  &trans                                                                 &trans          &trans     &trans
             >;
 
             label = "Direct";
-            sensor-bindings = <&scroll_encoder_10>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         Mouse {
