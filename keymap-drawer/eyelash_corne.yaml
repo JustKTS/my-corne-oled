@@ -200,10 +200,10 @@ layers:
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+KP 7
+  - KP 7
   - KP 8
-  - Gui+KP 9
-  - {t: '$$mdi:transfer$$', type: trans}
+  - KP 9
+  - '&msc MOVE_Y(-10)'
   - '7'
   - '8'
   - '9'
@@ -216,9 +216,9 @@ layers:
   - KP 4
   - KP 5
   - {t: KP 6, type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&msc MOVE_X(-10)'
+  - $$mdi:mouse-left-click-outline$$
+  - '&msc MOVE_X(10)'
   - {t: '4', type: held alternate}
   - {t: '5', s: '%'}
   - '6'
@@ -230,9 +230,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - KP 1
   - KP 2
-  - Gui+KP 3
+  - KP 3
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&msc MOVE_Y(10)'
   - '1'
   - '2'
   - '3'
@@ -241,7 +241,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - KP NUMLOCK
-  - Gui+KP 0
+  - KP 0
   - '0'
   - KP NUMLOCK
   - {t: '$$mdi:transfer$$', type: trans}
@@ -354,7 +354,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-right-click-outline$$
-  - '&mkp MB3'
+  - $$mdi:mouse-scroll-wheel$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
