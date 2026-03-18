@@ -209,7 +209,7 @@ layers:
   - '9'
   - {t: '-', s: _}
   - {t: '=', s: +}
-  - {t: Sft+\, s: Sft+|}
+  - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
