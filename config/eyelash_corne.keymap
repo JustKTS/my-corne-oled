@@ -83,15 +83,6 @@
         };
     };
 
-    rgb_bright_encoder: rgb_bright_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
-
-        label = "RGB_BRIGHT_ENCODER";
-        tap-ms = <50>;
-    };
-
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
