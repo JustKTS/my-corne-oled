@@ -69,9 +69,9 @@ layers:
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
-  - RGB HUD
+  - RGB SPD
   - RGB EFF
-  - RGB HUI
+  - RGB SPI
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
@@ -203,7 +203,7 @@ layers:
   - KP 7
   - KP 8
   - KP 9
-  - '&msc MOVE_Y(-10)'
+  - '&msc MOVE_Y(20)'
   - '7'
   - '8'
   - '9'
@@ -216,9 +216,9 @@ layers:
   - KP 4
   - KP 5
   - {t: KP 6, type: held}
-  - '&msc MOVE_X(-10)'
+  - '&msc MOVE_X(-20)'
   - $$mdi:mouse-left-click-outline$$
-  - '&msc MOVE_X(10)'
+  - '&msc MOVE_X(20)'
   - {t: '4', type: held alternate}
   - {t: '5', s: '%'}
   - '6'
@@ -232,7 +232,7 @@ layers:
   - KP 2
   - KP 3
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&msc MOVE_Y(10)'
+  - '&msc MOVE_Y(-20)'
   - '1'
   - '2'
   - '3'
@@ -301,7 +301,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&msc MOVE_Y(-10)'
+  - '&msc MOVE_Y(20)'
   - {t: '$$mdi:transfer$$', type: trans}
   - PG DN
   - PG UP
@@ -314,9 +314,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&msc MOVE_X(-10)'
+  - '&msc MOVE_X(-20)'
   - $$mdi:mouse-left-click-outline$$
-  - '&msc MOVE_X(10)'
+  - '&msc MOVE_X(20)'
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
@@ -330,7 +330,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&msc MOVE_Y(10)'
+  - '&msc MOVE_Y(-20)'
   - Ins
   - HOME
   - END
