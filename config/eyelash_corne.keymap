@@ -127,11 +127,16 @@
         ESC_QW {
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <125>;
         };
 
         MB2_UI {
             bindings = <&mkp RCLK>;
-            key-positions = <47 46>;
+            key-positions = <8 9>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <125>;
+            layers = <0>;
         };
     };
 
