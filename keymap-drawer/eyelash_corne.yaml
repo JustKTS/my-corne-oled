@@ -273,7 +273,7 @@ layers:
   - F8
   - F9
   - F10
-  - Sft+PRINTSCREEN
+  - PRINTSCREEN
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -310,12 +310,12 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+Sft+X
+  - Sft+Ctl+C
+  - Ctl+Sft+V
   - {t: '$$mdi:transfer$$', type: trans}
   - '&msc MOVE_X(-20)'
-  - $$mdi:mouse-left-click-outline$$
+  - $$mdi:mouse-right-click-outline$$
   - '&msc MOVE_X(20)'
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -325,16 +325,16 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&msc MOVE_Y(-20)'
   - Ins
   - HOME
   - END
-  - LGUI
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -397,5 +397,5 @@ combos:
   k: '&soft_off'
 - p: [1, 2]
   k: $$mdi:keyboard-esc$$
-- p: [9, 8]
+- p: [47, 46]
   k: $$mdi:mouse-right-click-outline$$
