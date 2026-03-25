@@ -46,9 +46,9 @@ layers:
   - '&CHANGE_LAYER'
   - $$mdi:apple-keyboard-command$$
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', h: Direct}
+  - {t: '$$mdi:apple-keyboard-control$$', h: Direct}
   - {t: Mouse, h: toggle}
-  - '&soft_off'
+  - $$mdi:apple-keyboard-option$$
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
@@ -397,3 +397,5 @@ combos:
   k: '&soft_off'
 - p: [1, 2]
   k: $$mdi:keyboard-esc$$
+- p: [9, 8]
+  k: $$mdi:mouse-right-click-outline$$
