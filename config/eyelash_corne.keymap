@@ -37,22 +37,30 @@
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
 
-        TAP_HOLD_LAYER: TAP_HOLD_LAYER {
+        TAP_HOLD_LAYER_LEFT: TAP_HOLD_LAYER_LEFT {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <7 22 36 7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 45 46 47>;
         };
 
-        HOME_ROW: HOME_ROW {
+        HOME_ROW_LEFT: HOME_ROW_LEFT {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <280>;
+            flavor = "balanced";
             hold-trigger-on-release;
+            require-prior-idle-ms = <150>;
+            quick-tap-ms = <175>;
+            hold-trigger-key-positions = <23 24 25 26 7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 46 47 45>;
         };
 
         CHANGE_LAYER: CHANGE_LAYER {
@@ -78,6 +86,34 @@
             tap-ms = <20>;
             label = "SCROLL_ENCODER_SPEED";
         };
+
+        HOME_ROW_RIGHT: HOME_ROW_RIGHT {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            require-prior-idle-ms = <150>;
+            quick-tap-ms = <175>;
+            label = "HOME_ROW_RIGHT";
+            hold-trigger-key-positions = <14 15 16 17 18 0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33>;
+        };
+
+        TAP_HOLD_LAYER_RIGHT: TAP_HOLD_LAYER_RIGHT {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            label = "TAP_HOLD_LAYER_RIGHT";
+            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 42 43 44>;
+        };
     };
 
     combos {
@@ -92,6 +128,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
         };
+
+        MB2_UI {
+            bindings = <&mkp RCLK>;
+            key-positions = <9 8>;
+        };
     };
 
     keymap {
@@ -100,10 +141,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB                     &kp Q                   &kp W                 &kp E                     &kp R              &kp T                                              &mmv MOVE_UP                     &kp Y                &kp U              &kp I                      &kp O                  &kp P                       &kp BSPC
-&TAP_HOLD_LAYER 5 CAPSLOCK  &HOME_ROW LEFT_SHIFT A  &HOME_ROW LEFT_ALT S  &HOME_ROW LEFT_COMMAND D  &HOME_ROW LCTRL F  &TAP_HOLD_LAYER 4 G                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &TAP_HOLD_LAYER 4 H  &HOME_ROW RCTRL J  &HOME_ROW RIGHT_COMMAND K  &HOME_ROW RIGHT_ALT L  &HOME_ROW RSHIFT SEMICOLON  &kp SQT
-&kp LEFT_SHIFT              &kp Z                   &kp X                 &kp C                     &kp V              &kp B                &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N                &kp M              &kp COMMA                  &kp DOT                &kp FSLH                    &kp ENTER
-                                                                          &CHANGE_LAYER             &kp LEFT_COMMAND   &kp SPACE                                                                           &lt 6 ENTER          &tog 7             &soft_off
+&kp TAB                          &kp Q                        &kp W                      &kp E                          &kp R                   &kp T                                                   &mmv MOVE_UP                     &kp Y                      &kp U                    &kp I                            &kp O                        &kp P                             &kp BSPC
+&TAP_HOLD_LAYER_LEFT 5 CAPSLOCK  &HOME_ROW_LEFT LEFT_SHIFT A  &HOME_ROW_LEFT LEFT_ALT S  &HOME_ROW_LEFT LEFT_COMMAND D  &HOME_ROW_LEFT LCTRL F  &TAP_HOLD_LAYER_LEFT 4 G                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &TAP_HOLD_LAYER_RIGHT 4 H  &HOME_ROW_RIGHT RCTRL J  &HOME_ROW_RIGHT RIGHT_COMMAND K  &HOME_ROW_RIGHT RIGHT_ALT L  &HOME_ROW_RIGHT RSHIFT SEMICOLON  &kp SQT
+&kp LEFT_SHIFT                   &kp Z                        &kp X                      &kp C                          &kp V                   &kp B                     &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N                      &kp M                    &kp COMMA                        &kp DOT                      &kp FSLH                          &kp ENTER
+                                                                                         &CHANGE_LAYER                  &kp LEFT_COMMAND        &kp SPACE                                                                                &lt 6 RCTRL                &tog 7                   &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
