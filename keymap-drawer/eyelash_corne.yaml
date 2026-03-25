@@ -397,5 +397,6 @@ combos:
   k: '&soft_off'
 - p: [1, 2]
   k: $$mdi:keyboard-esc$$
-- p: [47, 46]
+- p: [8, 9]
   k: $$mdi:mouse-right-click-outline$$
+  l: [QWERTY]

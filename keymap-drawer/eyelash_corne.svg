@@ -587,8 +587,8 @@ rect.held, rect.combo.held {
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="103" y="33" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="711" y="193" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="716" y="197" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
+<rect rx="6" ry="6" x="742" y="18" width="28" height="26" class="combo"/>
+<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="747" y="22" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
 </g>
 </g>
 </g>
@@ -890,10 +890,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="103" y="33" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
-<g class="combo combopos-2">
-<rect rx="6" ry="6" x="711" y="193" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="716" y="197" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
-</g>
 </g>
 </g>
 <g transform="translate(40, 637)" class="layer-SYMBOL">
@@ -1168,10 +1164,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="103" y="33" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
-<g class="combo combopos-2">
-<rect rx="6" ry="6" x="711" y="193" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="716" y="197" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
-</g>
 </g>
 </g>
 <g transform="translate(40, 955)" class="layer-KBFunc">
@@ -1437,10 +1429,6 @@ rect.held, rect.combo.held {
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="103" y="33" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
-</g>
-<g class="combo combopos-2">
-<rect rx="6" ry="6" x="711" y="193" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="716" y="197" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
 </g>
 </g>
 </g>
@@ -1733,10 +1721,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="103" y="33" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
-<g class="combo combopos-2">
-<rect rx="6" ry="6" x="711" y="193" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="716" y="197" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
-</g>
 </g>
 </g>
 <g transform="translate(40, 1592)" class="layer-Cap_Fn">
@@ -2000,10 +1984,6 @@ rect.held, rect.combo.held {
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="103" y="33" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
-</g>
-<g class="combo combopos-2">
-<rect rx="6" ry="6" x="711" y="193" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="716" y="197" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
 </g>
 </g>
 </g>
@@ -2278,10 +2258,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="103" y="33" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
-<g class="combo combopos-2">
-<rect rx="6" ry="6" x="711" y="193" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="716" y="197" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
-</g>
 </g>
 </g>
 <g transform="translate(40, 2229)" class="layer-Mouse">
@@ -2539,10 +2515,6 @@ rect.held, rect.combo.held {
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="103" y="33" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
-</g>
-<g class="combo combopos-2">
-<rect rx="6" ry="6" x="711" y="193" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="716" y="197" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
 </g>
 </g>
 </g>
