@@ -301,7 +301,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&msc MOVE_Y(20)'
+  - '&msc MOVE_Y(50)'
   - {t: '$$mdi:transfer$$', type: trans}
   - PG DN
   - PG UP
@@ -314,9 +314,9 @@ layers:
   - Sft+Ctl+C
   - Ctl+Sft+V
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&msc MOVE_X(-20)'
+  - '&msc MOVE_X(-50)'
   - $$mdi:mouse-right-click-outline$$
-  - '&msc MOVE_X(20)'
+  - '&msc MOVE_X(50)'
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
@@ -330,7 +330,7 @@ layers:
   - Ctl+V
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&msc MOVE_Y(-20)'
+  - '&msc MOVE_Y(-50)'
   - Ins
   - HOME
   - END
