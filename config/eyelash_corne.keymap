@@ -83,7 +83,7 @@
         hw_scroll: hw_scroll {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            bindings = <&msc MOVE_Y(2000)>, <&msc MOVE_Y(-2000)>;
  // 顺时针向上滚，逆时针向下滚
         };
 
@@ -92,7 +92,8 @@
         hw_scroll_hor: hw_scroll_hor {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+            bindings = <&msc MOVE_X(2000)>, <&msc MOVE_X(-2000)>;
+ // 顺时针向右滚，逆时针向左滚
         };
 
         HOME_ROW_RIGHT: HOME_ROW_RIGHT {
