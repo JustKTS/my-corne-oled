@@ -81,7 +81,7 @@
         scroll_encoder_speed: scroll_encoder_speed {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            bindings = <&msc MOVE_Y(-50)>, <&msc MOVE_Y(50)>;
 
             tap-ms = <20>;
             label = "SCROLL_ENCODER_SPEED";
@@ -217,9 +217,9 @@
 
         Direct {
             bindings = <
-&trans  &trans  &trans         &trans         &trans         &trans                              &msc MOVE_Y(20)                    &trans          &kp PG_DN  &kp PG_UP  &kp LBKT   &kp RBKT  &kp DEL
-&trans  &trans  &kp LC(LS(X))  &kp LS(LC(C))  &kp LC(LS(V))  &trans            &msc MOVE_X(-20)  &mkp RCLK         &msc MOVE_X(20)  &kp LEFT_ARROW  &kp DOWN   &kp UP     &kp RIGHT  &trans    &trans
-&trans  &trans  &kp LC(X)      &kp LC(C)      &kp LC(V)      &trans  &trans                      &msc MOVE_Y(-20)                   &kp INSERT      &kp HOME   &kp END    &trans     &trans    &trans
+&trans  &trans  &trans         &trans         &trans         &trans                              &msc MOVE_Y(50)                    &trans          &kp PG_DN  &kp PG_UP  &kp LBKT   &kp RBKT  &kp DEL
+&trans  &trans  &kp LC(LS(X))  &kp LS(LC(C))  &kp LC(LS(V))  &trans            &msc MOVE_X(-50)  &mkp RCLK         &msc MOVE_X(50)  &kp LEFT_ARROW  &kp DOWN   &kp UP     &kp RIGHT  &trans    &trans
+&trans  &trans  &kp LC(X)      &kp LC(C)      &kp LC(V)      &trans  &trans                      &msc MOVE_Y(-50)                   &kp INSERT      &kp HOME   &kp END    &trans     &trans    &trans
                                &trans         &trans         &trans                                                                 &trans          &trans     &trans
             >;
 
