@@ -79,21 +79,24 @@
         };
 
         // 定义一个名为 hw_scroll 的编码器行为
+
         hw_scroll: hw_scroll {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>; // 顺时针向上滚，逆时针向下滚
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+ // 顺时针向上滚，逆时针向下滚
             tap-ms = <20>; // 每次触发的时间间隔，影响滚动流畅度
         };
 
         // 如果你想让左右滚动也行，可以再定义一个
+
         hw_scroll_hor: hw_scroll_hor {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+
             tap-ms = <20>;
         };
-    
 
         HOME_ROW_RIGHT: HOME_ROW_RIGHT {
             compatible = "zmk,behavior-hold-tap";
@@ -232,7 +235,7 @@
             >;
 
             label = "Direct";
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         Mouse {
