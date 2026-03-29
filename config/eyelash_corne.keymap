@@ -83,8 +83,8 @@
         hw_scroll: hw_scroll {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc MOVE_Y(2000)>, <&msc MOVE_Y(-2000)>;
-            // 顺时针向上滚，逆时针向下滚
+            bindings = <&msc MOVE_Y(-500), <&msc MOVE_Y(500)>;
+            // 顺时针向下滚，逆时针向上滚
             tap-ms = <50>;
 
         };
@@ -94,7 +94,7 @@
         hw_scroll_hor: hw_scroll_hor {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc MOVE_X(2000)>, <&msc MOVE_X(-2000)>;
+            bindings = <&msc MOVE_X(500)>, <&msc MOVE_X(-500)>;
             // 顺时针向右滚，逆时针向左滚            
             tap-ms = <50>;
 
@@ -213,7 +213,7 @@
                            &trans           &kp KP_NUMLOCK   &kp KP_NUMBER_0                                                                 &kp NUMBER_0  &kp KP_NUMLOCK  &trans
             >;
 
-            sensor-bindings = <&hw_scroll>;
+            sensor-bindings = <&hw_scroll_hor>;
             label = "NumPad";
         };
 
@@ -237,7 +237,7 @@
             >;
 
             label = "Direct";
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&hw_scroll>;
         };
 
         Mouse {
