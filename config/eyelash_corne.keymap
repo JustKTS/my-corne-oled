@@ -84,7 +84,9 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc MOVE_Y(2000)>, <&msc MOVE_Y(-2000)>;
- // 顺时针向上滚，逆时针向下滚
+            // 顺时针向上滚，逆时针向下滚
+            tap-ms = <50>;
+
         };
 
         // 如果你想让左右滚动也行，可以再定义一个
@@ -93,7 +95,9 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc MOVE_X(2000)>, <&msc MOVE_X(-2000)>;
- // 顺时针向右滚，逆时针向左滚
+            // 顺时针向右滚，逆时针向左滚            
+            tap-ms = <50>;
+
         };
 
         HOME_ROW_RIGHT: HOME_ROW_RIGHT {
