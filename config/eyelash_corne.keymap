@@ -83,7 +83,7 @@
             #sensor-binding-cells = <0>;
             bindings = <&msc MOVE_Y(-50)>, <&msc MOVE_Y(50)>;
 
-            tap-ms = <20>;
+            tap-ms = <200>;
             label = "SCROLL_ENCODER_SPEED";
         };
 
@@ -224,7 +224,7 @@
             >;
 
             label = "Direct";
-            sensor-bindings = <&scroll_encoder_speed>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         Mouse {
