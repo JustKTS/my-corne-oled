@@ -85,7 +85,6 @@
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
  // 顺时针向上滚，逆时针向下滚
-            tap-ms = <20>; // 每次触发的时间间隔，影响滚动流畅度
         };
 
         // 如果你想让左右滚动也行，可以再定义一个
@@ -94,8 +93,6 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
-
-            tap-ms = <20>;
         };
 
         HOME_ROW_RIGHT: HOME_ROW_RIGHT {
