@@ -83,13 +83,11 @@
         hw_scroll: hw_scroll {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc MOVE_Y(-500), <&msc MOVE_Y(500)>;
+            bindings = <&msc MOVE_Y(-500)>, <&msc MOVE_Y(500)>;
             // 顺时针向下滚，逆时针向上滚
             tap-ms = <50>;
 
         };
-
-        // 如果你想让左右滚动也行，可以再定义一个
 
         hw_scroll_hor: hw_scroll_hor {
             compatible = "zmk,behavior-sensor-rotate";
